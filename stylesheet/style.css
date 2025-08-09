@@ -293,6 +293,12 @@ margin-top: 43px;
 .no_padding_bottom {
 padding-bottom: 0;
 }
+.full_white {
+color: #FFFFFF;
+}
+.secondary_white {
+color: #FCFCFC;
+}
 @keyframes fadeIn {
     0% {
     opacity: 0;
@@ -303,7 +309,11 @@ padding-bottom: 0;
 }
 @media screen and (max-width: 1180px) {
     .main {
-        padding: 0 17px;
+    padding: 0 17px;
+    }
+    .footer {
+    padding-left: 17px;
+    padding-right: 17px;
     }
 }
 @media screen and (max-width: 909px) {
