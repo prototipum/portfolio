@@ -19,7 +19,7 @@ max-width: 100%;
 h1, h2, h3, h4, h5, h6 {
 font-size: 1.5rem;
 font-weight: 400;
-line-height: 1.1;
+line-height: 1.2;
 margin: 0;
 }
 p {
@@ -93,6 +93,13 @@ font-family: "Poly";
 .main {
 max-width: 1180px;
 margin: 0 auto;
+}
+.centered_content {
+max-width: 1180px;
+margin: 0 auto;
+}
+.padding_view {
+width: 100%;
 }
 .tech_svg_div {
 display: flex;
@@ -199,14 +206,34 @@ display: flex;
 justify-content: space-between;
 margin-top: 112px;
 }
+.bottom_right_content_right_div {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
 .footer {
 margin-top: 295px;
+padding-top: 43px;
+padding-bottom: 43px;
+background: #1C1C1C;
+}
+.github_link {
+align-self: flex-end;
+}
+.align_self_end {
+align-self: flex-end;
+padding-top: 14px;
 }
 .right_contact {
 display: flex;
 flex-direction: column;
 align-items: flex-end;
 text-align: right;
+}
+.right_content_footer {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 .contact_title {
 font-size: 1.75rem;
@@ -234,6 +261,37 @@ color: #F4F4F4;
 }
 .planomaterial {
 object-fit: cover;
+}
+.split_content_footer {
+display: flex;
+justify-content: space-between;
+}
+.left_content_footer {
+display: flex;
+flex-direction: column;
+/* margin-bottom: 14px; */
+}
+.h2_footer {
+font-size: 1.25rem;
+font-weight: bold;
+font-family: "Raleway";
+line-height: 1.2;
+padding-bottom: 14px;
+}
+.blue {
+color: #607396;
+}
+.link_footer {
+margin-bottom: 14px;
+font-family: "Inter";
+font-weight: normal;
+line-height: 1.4;
+}
+.margin_top {
+margin-top: 43px;
+}
+.no_padding_bottom {
+padding-bottom: 0;
 }
 @keyframes fadeIn {
     0% {
