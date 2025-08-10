@@ -325,17 +325,72 @@ color: #FCFCFC;
     gap: 1rem;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 547px) {
     .main_banner {
-    padding: 0 1rem;
+    padding: 0 14px;
     }
 }
 @media screen and (max-width: 670px) {
     .main_banner {
-    padding: 0 1rem;
+        padding: 0 1rem;
     }
     .tech_svgs {
-    width: 32px;
-    height: 32px;
+        width: 32px;
+        height: 32px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main_banner {
+    padding: 0 1rem;
+    }
+    .main_banner_title {
+    max-width: 400px;
+    }
+    .to_the_left_title {
+    display: none;
+    }
+    .flex_holder_left {
+    justify-content: flex-end;
+    }
+    .tech_name {
+    display: none;
+    }
+    .skills {
+    flex-direction: column;
+    align-items: flex-end;
+    }
+    .end {
+    text-align: right;
+    margin-bottom: 43px;
+    }
+    .objective {
+    text-align: center;
+    }
+    .me {
+    flex-direction: column;
+    }
+    .planomaterial {
+    margin-bottom: 43px;
+    }
+    .split_content_footer {
+    flex-direction: column;
+    }
+    .h2_footer {
+    margin-bottom: 14px;
+    }
+    .github_link {
+    align-self: flex-start;
+    }
+    .align_self_end {
+    align-self: flex-start;
+    }
+    .main_title {
+    font-size: 1.8rem;
+    }
+    .header {
+    padding: 0 14px;
+    }
+    .content_header {
+    gap: 12px;
     }
 }
