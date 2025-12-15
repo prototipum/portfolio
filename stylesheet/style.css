@@ -1,5 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+--ascent-color: #607396;
+--text-color: #FFF;
+--title-color: #FFF;
+}
+html {
+font-size: 16px;
+}
 * {
 box-sizing: border-box;
 margin: 0;
@@ -9,7 +17,6 @@ body {
 font-family: "Arial", "Helvetica", sans-serif;
 color: #FFFFFF;
 background-color: #121212;
-font-size: 16px;
 line-height: 1.4;
 }
 img {
