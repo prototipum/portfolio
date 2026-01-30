@@ -25,3 +25,16 @@ function scrollToContact() {
 scrollToContact();
 const displayTechName = new DisplayTechName();
 displayTechName.techSvgsLoop();
+const imageEvent = document.querySelector('.planomaterial');
+let i = 0;
+function changeImageEvent(imageEvent) {
+    const images = ["images/profile/1994.jpg", "images/profile/planomaterial.jpg"];
+    imageEvent.addEventListener("click", () => {
+        imageEvent.src = images[i];
+        ++i;
+        if (i >= images.length) {
+            i = 0;
+        };
+    });
+}
+changeImageEvent(imageEvent);
