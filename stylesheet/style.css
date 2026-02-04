@@ -79,6 +79,7 @@ flex-direction: column;
 justify-content: space-between;
 height: 800px;
 padding: 0 46px;
+background-attachment: fixed;
 }
 .banner_title {
 font-size: 2rem;
