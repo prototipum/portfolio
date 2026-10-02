@@ -39,4 +39,20 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     changeImageEvent(imageEvent);
     console.warn("Esse site não utiliza cookies ou tracking de dados do usuário.");
+    rotateGradient();
 });
+function rotateGradient() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return;
+    }
+    const duration = 18000;
+    const startTime = performance.now();
+    function animateGradient(currentTime) {
+        const footer = document.querySelector('.footer');
+        const angle = ((currentTime - startTime) / duration * 360 + 90) % 360;
+        footer.style.background = `linear-gradient(${angle}deg, #1C1C1C, #1F1F1F)`;
+        window.requestAnimationFrame(animateGradient);
+    }
+
+    window.requestAnimationFrame(animateGradient);
+}
