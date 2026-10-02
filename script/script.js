@@ -53,6 +53,16 @@ function rotateGradient() {
         footer.style.background = `linear-gradient(${angle}deg, #1C1C1C, #1F1F1F)`;
         window.requestAnimationFrame(animateGradient);
     }
-
     window.requestAnimationFrame(animateGradient);
 }
+const header = document.querySelector('.header');
+function stickyHeader(header) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+          header.classList.add("sticky_header");
+        } else {
+          header.classList.remove("sticky_header");
+        }
+    });
+}
+stickyHeader(header);
